@@ -12,14 +12,27 @@
     <h1>스터디 그룹 홈페이지에 오신 것을 환영합니다.<br>
     <h1>처음 방문하신 분은 회원가입을 해 주시기 바랍니다.
 
-      <form action="file:///C:/Users/gd/Desktop/html과제/회원가입.html?">
-         <p id = "id">아이디 <input type="text" name="id">
-         <input type="button" value="로그인" style="height:80 "></p>
+    <!-- <<form action="file:///C:/Users/gd/Desktop/html과제/회원가입.html?">> -->
+        아이디 <input type="text" id="id">
+        <input type="button" value="로그인" style="height:80" onclick = properInput()>
 
-         <p id = "pwd"> 비밀번호 <input type="password" name="pwd" style="width:100 "></p>
-         <input type="submit" value="회원가입">
-         <input type="submit" value="ID찾기">
-      </form>
+        비밀번호 <input type="password" id="pwd" style="width:100 ">
+        <input type="submit" value="회원가입">
+        <input type="submit" value="ID찾기">
+    <!--</form>-->
     </center>
+    <script type= text/javascript>
+        function properInput(){
+            const id = document.querySelector('#id');
+            const pwd = document.querySelector('#pwd');
+            console.log(id, ":", pwd);
+
+            if (id.value === "" || pwd.value === "") {
+                alert("아이디와 비밀번호를 입력하세요.")
+            } else {
+                console.log('success')
+            }
+        }
+      </script>
   </body>
 </html>
