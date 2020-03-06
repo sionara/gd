@@ -1,0 +1,14 @@
+.calculate-button{
+    color:red;
+}
+.title{
+    text-align:center;
+}
+
+.result{
+    font-weight: bold;
+}
+
+.input-val{
+    color:orange;
+}
